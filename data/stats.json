@@ -1,0 +1,80 @@
+{
+    "username": "itsskipped",
+    "updated": "2026-06-30T17:22:19.373012Z",
+    "overall": {
+        "available": 525,
+        "solved": 174,
+        "retired": 1,
+        "percentage": 33.14
+    },
+    "difficulty": {
+        "easy": {
+            "available": 113,
+            "solved": 91,
+            "retired": 0,
+            "percentage": 80.53
+        },
+        "medium": {
+            "available": 276,
+            "solved": 78,
+            "retired": 1,
+            "percentage": 28.26
+        },
+        "hard": {
+            "available": 136,
+            "solved": 5,
+            "retired": 0,
+            "percentage": 3.68
+        }
+    },
+    "categories": {
+        "Web Exploitation": {
+            "available": 83,
+            "solved": 32,
+            "retired": 1,
+            "percentage": 38.55
+        },
+        "Cryptography": {
+            "available": 83,
+            "solved": 47,
+            "retired": 0,
+            "percentage": 56.63
+        },
+        "Reverse Engineering": {
+            "available": 102,
+            "solved": 15,
+            "retired": 0,
+            "percentage": 14.71
+        },
+        "Forensics": {
+            "available": 86,
+            "solved": 17,
+            "retired": 0,
+            "percentage": 19.77
+        },
+        "General Skills": {
+            "available": 75,
+            "solved": 52,
+            "retired": 0,
+            "percentage": 69.33
+        },
+        "Binary Exploitation": {
+            "available": 76,
+            "solved": 10,
+            "retired": 0,
+            "percentage": 13.16
+        },
+        "Blockchain": {
+            "available": 4,
+            "solved": 1,
+            "retired": 0,
+            "percentage": 25.0
+        },
+        "Artificial Intelligence": {
+            "available": 16,
+            "solved": 0,
+            "retired": 0,
+            "percentage": 0.0
+        }
+    }
+}
