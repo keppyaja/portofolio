@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsaqif Fawwaz | Cyber Security Enthusiast</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo"><i class="fas fa-terminal"></i> Skipped<span>x0r</span></a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects & CTF</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                </div>
+                <div class="terminal-content" id="terminal-content">
+                    </div>
+            </div>
+            <div class="hero-content">
+                <h1>Hello, I'm <span style="color: var(--accent-color);">Tsaqif</span> A.K.A <span style="color: var(--accent-color);">Skipped</span></h1>
+                <p class="subtitle">Cybersecurity Enthusiast | CTF Player | Programmer</p>
+                <p>Mendedikasikan diri pada analisis kerentanan, kriptografi, dan pemecahan algoritma kompleks melalui Competitive Programming.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn">Lihat Write-ups</a>
+                    <a href="#contact" class="btn btn-accent">Initiate Handshake</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Whoami</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Saya adalah mahasiswa Sarjana Terapan Teknik Informatika di Politeknik Elektronika Negeri Surabaya dengan ketertarikan mendalam pada keamanan siber, khususnya pada ranah Kriptografi, <i>Binary Exploitation</i>, dan <i>Web Exploitation</i>.</p>
+                    <p>Sebagai pemain <i>Capture The Flag</i> (CTF) yang aktif di platform seperti CryptoHack, picoCTF (sekarang CyLab), dan OverTheWire, saya sering memecahkan tantangan keamanan mulai dari eksploitasi AES/RSA hingga dekompilasi menggunakan Ghidra di lingkungan Kali Linux & WSL.</p>
+                    <p>Selain keamanan siber, saya juga cukup aktif dalam <i>Competitive Programming</i> (menggunakan C++) serta memiliki pengalaman dalam merancang arsitektur basis data relasional (PostgreSQL).</p>
+                </div>
+                <div class="about-img">
+                    <img src="assets/profile.webp" alt="Tsaqif Fawwaz">
+                    
+                    <div id="cf-stats" class="cf-card">
+                        <h4><i class="fas fa-satellite-dish"></i> Intercepting Codeforces Data...</h4>
+                    </div>
+
+                    <div id="cylab-stats" class="cf-card" style="margin-top: 15px; border-left-color: #007bff;">
+                        <h4><i class="fas fa-satellite-dish"></i> Connecting to CyLab Node...</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Tech Stack & Arsenal</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-key"></i></div>
+                    <h3>Kriptografi & Analisis</h3>
+                    <p>RSA, AES, Lattice Reduction, Hidden Number Problem (HNP)</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Reverse Engineering</h3>
+                    <p>Ghidra, Analisis Binary, Dekompilasi</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <p>Python (pwntools), C++ (Algoritma/CP), PHP</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                    <h3>Sistem & Lingkungan</h3>
+                    <p>Kali Linux, Ubuntu WSL, Bash Scripting</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database Design</h3>
+                    <p>PostgreSQL, Oracle, SQL CRUD, MS Access Schema</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-flag"></i></div>
+                    <h3>CTF & Keamanan</h3>
+                    <p>CryptoHack, picoCTF, Web Exploitation, Cryptography, Binary Exploitation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Projects & Write-ups</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>LibraryApp: Backend System</h3>
+                        <p>Pengembangan sistem manajemen peminjaman buku berbasis server menggunakan PHP dan PostgreSQL. Mengimplementasikan koneksi aman via PDO, autentikasi pengguna dengan <i>password hashing</i> tersandi, <i>Role-Based Access Control</i> (Admin/User), serta kalkulasi denda keterlambatan dinamis berbasis kueri SQL relasional.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">PDO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>Truncated LCG Solver (Lattice Reduction)</h3>
+                        <p>Mengimplementasikan skrip Python menggunakan <i>pwntools</i> dan teknik Lattice Reduction untuk memulihkan nilai 256-bit tersembunyi. Eksploitasi kerentanan pada Linear Congruential Generator.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Kriptografi</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Pwntools</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>CTF Write-ups: Crypto & BinEx</h3>
+                        <p>Dokumentasi rinci dan analisis dari kompetisi dan latihan seperti ARACTF dan picoCTF. Fokus utama pada bypass keamanan kriptografi dan binary exploitation.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Ghidra</span>
+                            <span class="tag">CTF</span>
+                            <span class="tag">Rev</span>
+                        </div>
+                        <button class="btn btn-accent" style="margin-top: 15px; padding: 8px 15px; font-size: 1rem;" onclick="openWriteup('README.md')">
+                            <i class="fas fa-terminal"></i> Read README.md
+                        </button>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>Algorithmic Problem Solving (CP)</h3>
+                        <p>Menyelesaikan masalah algoritma kompleks dari Codeforces, termasuk implementasi struktur data graf lanjutan dan optimasi <i>linear recurrence</i> menggunakan C++.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Codeforces</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>Perpusri: Digital Library System</h3>
+                        <p>Pengembangan sistem repositori perpustakaan riset online. Mengimplementasikan <i>Role-Based Access Control</i> (RBAC) untuk rute Admin/User, manipulasi DOM dinamis untuk pencarian tingkat lanjut, serta simulasi <i>database</i> dan sistem autentikasi mandiri secara <i>client-side</i> menggunakan Vanilla JavaScript dan API LocalStorage.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Vanilla JS</span>
+                            <span class="tag">RBAC Auth</span>
+                            <span class="tag">LocalStorage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Establish Connection</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Sidoarjo / Surabaya, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-users"></i></div>
+                        <div>
+                            <h3>Team Affiliation</h3>
+                            <p>KTCG Community</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>Tersedia via Request</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Target Alias (Name)</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Return Address (Email)</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Payload (Message)</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent">Execute <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3><i class="fas fa-shield-alt"></i> Tsaqif Fawwaz</h3>
+                    <p>Cybersecurity Enthusiast | CTF Player. Always learning, always exploring.</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Network</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/keppyaja" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-tsaqif-fawwaz-nasywan-b179bb320/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://codeforces.com/profile/TsaaQiif" title="Codeforces" target="_blank"><i class="fas fa-code"></i></a>
+                        <a href="https://ctftime.org/user/201802" title="CTFTIME" target="_blank"><i class="fas fa-flag"></i></a>
+                        <a href="https://learn.cylabacademy.org/users/itsskipped" title="CyLab Academy" target="_blank"><i class="fas fa-satellite-dish"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Skipped. Compiled successfully.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="writeupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="markdown-content">
+                <p><i class="fas fa-spinner fa-spin"></i> Mendekripsi payload dari GitHub...</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // --- Terminal Typewriter Effect ---
+        const terminalContent = document.getElementById('terminal-content');
+        const commands = [
+            { type: 'input', prompt: 'kali@skipped:~$', text: 'whoami' },
+            { type: 'output', text: 'Tsaqif Fawwaz - Cyber Security & CP Enthusiast' },
+            { type: 'input', prompt: 'kali@skipped:~$', text: './show_focus.sh' },
+            { type: 'output', text: '[+] Cryptography [+] Binary Exploitation [+] Linux' }
+        ];
+
+        let stepIndex = 0;
+        let charIndex = 0;
+
+        function typeTerminal() {
+            if (stepIndex < commands.length) {
+                const currentData = commands[stepIndex];
+
+                if (charIndex === 0) {
+                    const p = document.createElement('p');
+                    if (currentData.type === 'input') {
+                        p.innerHTML = `<span class="terminal-prompt">${currentData.prompt}</span> <span class="typing-text" style="color: var(--light-color);"></span><span class="cursor-blink"></span>`;
+                    } else {
+                        p.className = "terminal-output";
+                        p.innerHTML = `<span class="typing-text"></span><span class="cursor-blink"></span>`;
+                    }
+                    terminalContent.appendChild(p);
+                }
+
+                const currentP = terminalContent.lastElementChild;
+                const textSpan = currentP.querySelector('.typing-text');
+                const cursorSpan = currentP.querySelector('.cursor-blink');
+                
+                if (charIndex < currentData.text.length) {
+                    textSpan.textContent += currentData.text.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeTerminal, 40); 
+                } else {
+                    if (cursorSpan) cursorSpan.remove();
+                    stepIndex++;
+                    charIndex = 0;
+                    setTimeout(typeTerminal, 400); 
+                }
+            } else {
+                const p = document.createElement('p');
+                p.innerHTML = `<span class="terminal-prompt">kali@tsaqif:~$</span> <span class="cursor-blink"></span>`;
+                terminalContent.appendChild(p);
+            }
+        }
+
+        terminalContent.innerHTML = '';
+        window.addEventListener('load', typeTerminal);
+
+        // --- Mobile menu toggle ---
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', function () {
+            const isOpen = navLinks.classList.toggle('active');
+            this.setAttribute('aria-expanded', isOpen);
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.querySelector('i').classList.remove('fa-times');
+                menuToggle.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // --- Smooth scroll ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return;
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // --- Header glow + active-section nav highlighting ---
+        const header = document.querySelector('header');
+        const sections = document.querySelectorAll('section[id]');
+        const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+
+        function handleScrollEffects() {
+            header.classList.toggle('scrolled', window.scrollY > 100);
+
+            let currentSection = '';
+            sections.forEach(section => {
+                if (window.scrollY >= section.offsetTop - 120) {
+                    currentSection = section.id;
+                }
+            });
+
+            navAnchors.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${currentSection}`);
+            });
+        }
+
+        window.addEventListener('scroll', handleScrollEffects);
+        handleScrollEffects(); 
+
+        // --- AJAX Form Submission via FormSubmit ---
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Mencegah reload halaman
+
+            // Ambil elemen tombol dan nilai input
+            const btn = this.querySelector('button');
+            const originalText = btn.innerHTML;
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Ubah tombol menjadi status loading
+            btn.innerHTML = 'Executing Payload... <i class="fas fa-spinner fa-spin"></i>';
+            btn.disabled = true;
+
+            // Kirim request ke FormSubmit API
+            fetch("https://formsubmit.co/ajax/sukepaja18@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    _subject: "[Skippedx0r] New Target Payload Received!",
+                    Name: name,
+                    Email: email,
+                    Message: message
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('[+] Payload Delivered. Connection established successfully.');
+                this.reset(); // Kosongkan form
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            })
+            .catch(error => {
+                alert('[-] Connection Failed. Target unreachable.');
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            });
+        });
+        // ==========================================
+        // FITUR 3: LIVE CODEFORCES API INTEGRATION
+        // ==========================================
+        async function fetchCodeforces() {
+            const cfContainer = document.getElementById('cf-stats');
+            try {
+                const res = await fetch('https://codeforces.com/api/user.info?handles=TsaaQiif');
+                const data = await res.json();
+                
+                if (data.status === 'OK') {
+                    const user = data.result[0];
+                    cfContainer.innerHTML = `
+                        <h4><i class="fas fa-code"></i> Codeforces Live Status</h4>
+                        <div class="cf-grid">
+                            <div class="cf-item"><span>Handle:</span> <a href="https://codeforces.com/profile/TsaaQiif" target="_blank">${user.handle}</a></div>
+                            <div class="cf-item"><span>Rank:</span> ${user.rank || 'Unrated'}</div>
+                            <div class="cf-item"><span>Rating:</span> ${user.rating || 'N/A'} <span style="color:var(--gray-color);">(Max: ${user.maxRating || 'N/A'})</span></div>
+                        </div>
+                    `;
+                }
+            } catch (e) {
+                cfContainer.innerHTML = `<p style="color: red;">[-] Gagal menyambung ke server Codeforces.</p>`;
+            }
+        }
+        fetchCodeforces();
+
+        // ==========================================
+        // FITUR 5: GITHUB MARKDOWN WRITE-UP VIEWER
+        // ==========================================
+        const modal = document.getElementById("writeupModal");
+        const span = document.getElementsByClassName("close-btn")[0];
+        const mdContent = document.getElementById("markdown-content");
+
+        async function openWriteup(filePath) {
+            modal.style.display = "block";
+            mdContent.innerHTML = '<p><i class="fas fa-spinner fa-spin"></i> Mendekripsi data dari repositori...</p>';
+            
+            try {
+                // Mengambil file raw dari repository Anda
+                const url = `https://raw.githubusercontent.com/keppyaja/Write-Ups/main/${filePath}`;
+                const res = await fetch(url);
+                
+                if (!res.ok) throw new Error('File tidak ditemukan (404)');
+                
+                const text = await res.text();
+                // Parse markdown menjadi HTML menggunakan Marked.js
+                mdContent.innerHTML = marked.parse(text);
+            } catch (e) {
+                mdContent.innerHTML = `<p style="color:red;">[-] System Error: ${e.message}. Pastikan nama/path file benar di GitHub.</p>`;
+            }
+        }
+
+        // Tutup modal jika tombol X diklik
+        span.onclick = function() { modal.style.display = "none"; }
+        // Tutup modal jika user mengklik area luar kotak
+        window.onclick = function(event) { 
+            if (event.target == modal) { modal.style.display = "none"; } 
+        }
+        async function fetchChallengeStats(){
+
+            const response =
+            await fetch("stats.json?t="+Date.now());
+
+            const stats =
+            await response.json();
+
+            console.log(stats);
+        }
+        fetchChallengeStats();
+    </script>
+</body>
+</html>
