@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="assets/css/style.css?v=6">
 </head>
 <body>
     <div class="scanlines"></div>
@@ -69,15 +69,57 @@
                     <p>Selain keamanan siber, saya juga cukup aktif dalam <i>Competitive Programming</i> (menggunakan C++) serta memiliki pengalaman dalam merancang arsitektur basis data relasional (PostgreSQL).</p>
                 </div>
                 <div class="about-img">
-                    <img src="assets/profile.webp" alt="Tsaqif Fawwaz">
+                    <img src="assets/images/profile.webp" alt="Tsaqif Fawwaz">
                     
                     <div id="cf-stats" class="cf-card">
                         <h4><i class="fas fa-satellite-dish"></i> Intercepting Codeforces Data...</h4>
                     </div>
 
-                    <div id="cylab-stats" class="cf-card" style="margin-top: 15px; border-left-color: #007bff;">
-                        <h4><i class="fas fa-satellite-dish"></i> Connecting to CyLab Node...</h4>
-                    </div>
+                    <div id="cylab-stats" class="cf-card">
+
+    <h4>
+        <i class="fas fa-shield-halved"></i>
+        CyLab Live
+    </h4>
+
+    <div class="cf-grid">
+
+        <div class="cf-item">
+            <span>Progress</span>
+            <strong id="cy-progress">...</strong>
+        </div>
+
+        <div class="cf-item">
+            <span>Solved</span>
+            <strong id="cy-solved">...</strong>
+        </div>
+
+        <div class="cf-item">
+            <span>Easy</span>
+            <strong id="cy-easy">...</strong>
+        </div>
+
+        <div class="cf-item">
+            <span>Medium</span>
+            <strong id="cy-medium">...</strong>
+        </div>
+
+        <div class="cf-item">
+            <span>Hard</span>
+            <strong id="cy-hard">...</strong>
+        </div>
+
+    </div>
+
+    <div class="progress-bar">
+
+        <div id="cy-bar"></div>
+
+    </div>
+
+    <div id="cy-updated"></div>
+
+</div>
                 </div>
             </div>
         </div>
@@ -480,17 +522,61 @@
         window.onclick = function(event) { 
             if (event.target == modal) { modal.style.display = "none"; } 
         }
-        async function fetchChallengeStats(){
+        async function fetchCyLab(){
 
-            const response =
-            await fetch("stats.json?t="+Date.now());
+    try{
 
-            const stats =
-            await response.json();
+        const res =
+        await fetch("data/stats.json?"+Date.now());
 
-            console.log(stats);
-        }
-        fetchChallengeStats();
+        const stats =
+        await res.json();
+
+        document.getElementById("cy-progress").textContent =
+        stats.overall.percentage+"%";
+
+        document.getElementById("cy-solved").textContent =
+        `${stats.overall.solved}/${stats.overall.available}`;
+
+        document.getElementById("cy-easy").textContent =
+        `${stats.difficulty.easy.solved}/${stats.difficulty.easy.available}`;
+
+        document.getElementById("cy-medium").textContent =
+        `${stats.difficulty.medium.solved}/${stats.difficulty.medium.available}`;
+
+        document.getElementById("cy-hard").textContent =
+        `${stats.difficulty.hard.solved}/${stats.difficulty.hard.available}`;
+
+        document.getElementById("cy-bar").style.width =
+        stats.overall.percentage+"%";
+
+        const d =
+        new Date(stats.updated);
+
+        document.getElementById("cy-updated").innerHTML =
+        `<i class="fas fa-clock"></i> Updated ${d.toLocaleString()}`;
+
+    }
+
+    catch(err){
+
+        document.getElementById("cylab-stats").innerHTML=`
+            <h4>
+                <i class="fas fa-triangle-exclamation"></i>
+                CyLab Offline
+            </h4>
+
+            <p>
+                Unable to load statistics.
+            </p>
+        `;
+
+    }
+
+}
+
+fetchCyLab();
     </script>
+    <script src="js/cylab.js"></script>
 </body>
 </html>
