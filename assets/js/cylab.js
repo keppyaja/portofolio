@@ -1,8 +1,14 @@
-async function loadCyLab(){
+async function loadCyLab() {
 
-    const response = await fetch("./data/stats.json");
+    console.log("Loading CyLab...");
+
+    const response = await fetch("data/stats.json?" + Date.now());
+
+    console.log(response.status);
 
     const stats = await response.json();
+
+    console.log(stats);
 
     document.getElementById("cylab-progress").textContent =
         stats.overall.percentage + "%";
@@ -22,6 +28,7 @@ async function loadCyLab(){
     document.getElementById("overall-bar").style.width =
         stats.overall.percentage + "%";
 
+    console.log("Updated.");
 }
 
 loadCyLab();
