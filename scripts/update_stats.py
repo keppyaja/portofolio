@@ -16,7 +16,7 @@ BRAVE_PATH = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.ex
 
 USER_DATA = r"C:\Users\sukep\AppData\Local\BraveSoftware\Brave-Browser\User Data"
 
-PROFILE = "Default"
+PROFILE = "Profile 1"
 
 API = f"/api/users/{USER_ID}/gym_stats/"
 
